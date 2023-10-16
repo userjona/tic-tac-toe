@@ -1,0 +1,74 @@
+.board {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    margin: 50px auto;
+    margin-bottom: 20px;
+}
+
+.cell {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.grid-00 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.grid-01 {
+    border-bottom: 2px solid black;
+}
+
+.grid-02 {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.grid-11 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.grid-12 {
+    border-bottom: 2px solid black;
+}
+
+.grid-13 {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.grid-21 {
+    border-right: 2px solid black;
+}
+
+.grid-23 {
+    border-left: 2px solid black;
+}
+
+.turn-btn {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    gap: 30px;
+}
+
+#X, #O {
+    text-align: center;
+    width: 7.5em;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#X:hover, #O:hover {
+    color:white;
+    transition: 0.25s;
+    background-color: black;
+}
